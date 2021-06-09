@@ -1,0 +1,41 @@
+
+toda classe começa com Letra maiúscula 
+Alfanumérico: é um texto, parte de um texto ou um número que não será utilizado
+em operações matemáticas.
+Em java: *String* - string é uma classe instalada na máquina em algum lugar
+
+Numérico: representa um dado que pode ser utilizado em expressões matemáticas
+e/ou é considerado um dado crítico pelo contexto.
+CEP: Correios
+CPF: Receita Federal
+Funcional: Itaú
+RM: entre alunos de faculdade
+int => para representação de números inteiros
+Double => para números reais (com casas decimais)
+
+//showInput é um método, todo método vem seguido de parenteses e começa com letra minuscula
+//parseInt tranforma String em INT
+
+			/*
+			 * Caracteristicas do Vetor:
+			 * - o tamanho dele é estático
+			 * - o vetor precisa de uma variável para controlar o indice (posição)
+			 * - os dados são homogeneos (do mesmo tipo) 
+			 * - não é possível excluir uma posição em tempo de execução
+			 * - ordenação dos dados é complexa
+			 */
+
+/*
+ * Design Pattern: compilado de boas práticas para OO;
+ * DTO (Design Transfer Object) => é um patter que indica as melhores práticas para a montagem de uma classe modelo
+ * (do diagrama de classe) na programação.
+ * - TODOS os atributos devem ser privados;
+ * - CADA atributo deve possuir INDIVIDUALMENTE um método de input e outro método e output.
+ * - Deve possuir no mínimo DOIS construtores, onde um deles deve estar vazio (sem parametros) e o outro deve estar completo
+ * com todos os parametros para o preenchimento dos atributos.
+ * 
+ * 
+ * Nomes que podemos encontrar para PACOTES de modelo:
+ * modelo = beans = JavaBeans = dto = to
+ * 
+ */
