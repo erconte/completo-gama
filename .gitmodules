@@ -1,3 +1,0 @@
-[submodule "./wserickconte/"] 
-  path = ./wserickconte/ 
-  url = https://github.com/erickconte/wserickconte.git

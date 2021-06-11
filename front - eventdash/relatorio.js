@@ -1,3 +1,7 @@
+function alertas() {
+    fetch("http://localhost:8080/alarmes")
+}
+
 function filtrar(){
     fetch("http://localhost:8080/intervalo/" + 
     document.getElementById("txtinicio").value + "/" + 
@@ -7,16 +11,16 @@ function filtrar(){
             var tabela = 
             "<table class='table' border='1' align='center' width='80%'>" + 
             "<tr>" + 
-            "<th>Música</th>" + 
-            "<th>Artista</th>" + 
-            "<th>Cadastro</th>" +
+            "<th>Hostname do Equipamento</th>" + 
+            "<th>Tipo do Alarme</th>" + 
+            "<th>Data do Evento</th>" +
             "</tr>";
             for (contador=0;contador<res.length;contador++){
                 tabela+=
                 "<tr>" +
-                "<td>" + res[contador].titulo + "</td>" +
-                "<td>" + res[contador].artista.nomeArtistico + "</td>" +
-                "<td>" + res[contador].cadastro + "</td>" +
+                "<td>" + res[contador].equipamento.hostname + "</td>" +
+                "<td>" + res[contador].alarme.nome + "</td>" +
+                "<td>" + res[contador].data + "</td>" +
                 "</tr>";
             }
             tabela+="</table>";
